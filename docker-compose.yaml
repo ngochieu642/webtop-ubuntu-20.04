@@ -11,6 +11,7 @@ services:
       - KEYBOARD=en-us-qwerty #optional
     volumes:
       - ${PWD}/config:/config #home directory
+      - ${PWD}/data:/data
       #- /var/run/docker.sock:/var/run/docker.sock #optional only if you need access to docker winthin this container
     ports:
       - 3000:3000
